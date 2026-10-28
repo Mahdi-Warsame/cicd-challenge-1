@@ -1,8 +1,8 @@
-🚀 CI/CD Challenge 1 — Node.js App
+## 🚀 CI/CD Challenge 1 — Node.js App
 
 A simple Node.js application demonstrating automated testing, Docker containerization, and CI/CD with GitHub Actions.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 * Node.js & Express — Web application
 * Jest & Supertest — Automated testing
@@ -10,7 +10,7 @@ A simple Node.js application demonstrating automated testing, Docker containeriz
 * GitHub Actions — CI/CD automation
 * Docker Hub — Image registry
 
-⚙️ CI/CD Pipeline
+# ⚙️ CI/CD Pipeline
 
 Whenever code is pushed to main, GitHub Actions:
 
@@ -19,7 +19,7 @@ Whenever code is pushed to main, GitHub Actions:
 3. Publishes the image to Docker Hub with latest and commit SHA tags.
 
 Pull requests targeting main trigger the test job but do not publish an image.
-🏃 Run Locally
+# 🏃 Run Locally
 # Install dependencies
 npm ci
 
@@ -32,7 +32,7 @@ Visit http://localhost:3000 to access the app.
 
 Health check: http://localhost:3000/health
 
-🐳 Run with Docker
+# 🐳 Run with Docker
 
 # Build the image
 docker build -t node-cicd-app .
@@ -40,7 +40,7 @@ docker build -t node-cicd-app .
 # Run the container
 docker run -d -p 3000:3000 --name node-cicd-container node-cicd-app
 
-📚 What I Learned
+# 📚 What I Learned
 
 * Automating tests with GitHub Actions
 * Building and publishing Docker images
@@ -48,7 +48,7 @@ docker run -d -p 3000:3000 --name node-cicd-container node-cicd-app
 * Using Docker image tags to track versions
 * Connecting automated testing with image publishing
 
-🔭 Next Steps
+# 🔭 Next Steps
 
 * Improve test coverage
 * Add deployment automation
