@@ -6,7 +6,7 @@ const PORT=process.env.PORT||3000;
 //Main application endpoint
 app.get("/", (req, res)=>{
     res.json({
-        message:"Hello! My Node.js application is running.",
+        message:"Hello from my automated CI/CD pipeline!",
         status:"success",
         version:"1.0.0"
     });
